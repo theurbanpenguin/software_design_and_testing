@@ -1,0 +1,7 @@
+wheel
+setuptools
+colorama
+black
+pyarrow
+numpy
+pandas

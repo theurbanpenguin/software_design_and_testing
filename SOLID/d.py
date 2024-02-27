@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class LightBulbInterface(ABC):
     @abstractmethod
     def turn_on(self):
@@ -9,6 +10,7 @@ class LightBulbInterface(ABC):
     def turn_off(self):
         pass
 
+
 class LightBulb(LightBulbInterface):
     def turn_on(self):
         print("Light bulb turned on.")
@@ -16,13 +18,15 @@ class LightBulb(LightBulbInterface):
     def turn_off(self):
         print("Light bulb turned off.")
 
+
 class LightSwitch:
     def __init__(self, bulb: LightBulbInterface):
         self.bulb = bulb
 
     def operate(self):
         self.bulb.turn_on()  # Turn the light on
-        self.bulb.turn_off() # Then off
+        self.bulb.turn_off()  # Then off
+
 
 # Create an instance of LightBulb
 my_bulb: LightBulb = LightBulb()
