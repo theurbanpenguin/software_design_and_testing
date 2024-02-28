@@ -5,3 +5,4 @@ black
 pyarrow
 numpy
 pandas
+pytest
